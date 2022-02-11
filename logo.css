@@ -1,0 +1,459 @@
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #fff;
+    --white2: #c8bca6;
+    --gray: #96929e;
+    --gray2: #333;
+    --black: #000;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('./Fonts/Montserrat/MontserratAlternates-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('./Fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/* CSS */
+/* logo navbar */
+.logo-nav {
+    width: 22.5%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2em;
+    overflow-y: scroll;
+    z-index: 2;
+}
+/* logo main */
+.logo-main {
+    width: 77.5%;
+    height: auto;
+    background-color: var(--white);
+    margin-left: 22.5%;
+    font-family: Montserrat;
+}
+.main-spacer {
+    padding: 0 0.75rem;
+}
+.logo-list {
+    list-style-type: none;
+}
+/* logo title */
+.logo-list h1 {
+    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 20pt;
+    letter-spacing: 5px;
+    padding: 1em 0 2.5em;
+}
+.logo-links, .jeans-list {
+    list-style-type: none;
+}
+.logo-links li {
+    margin: 0.5em 0;
+}
+/* logo navbar buttons */
+.links, .jeans-btn, .jeans-list a, .jeans-list span {
+    color: var(--gray);
+    text-decoration: none;
+    font-family: Roboto;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    width: 100%;
+    font-weight: bold;
+    font-size: 12.5pt;
+}
+/* logo navbar hover effects */
+.links:hover, .jeans-btn:hover, .jeans-list a:hover {
+    color: var(--black);
+    background-color: var(--white2);
+    text-decoration: none;
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+    padding-left: 1em;
+}
+/* logo navbar icons */
+.links i, .jeans-btn i, .special i, .social i {
+    width: 25px;
+}
+.jeans-btn:hover {
+    cursor: pointer;
+}
+.jeans-list li {
+    margin: 0.5em 0;
+}
+.jeans-list {
+    display: none;
+}
+/* logo navbar social section */
+.social-section {
+    margin: 2em 0 0 0;
+}
+.social-list {
+    list-style-type: none;
+}
+.social-list a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 12.5pt;
+    font-family: Roboto;
+}
+.social-list a:hover {
+    background-color: var(--white2);
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+}
+/* mobile sidebar */
+.bars:hover {
+    cursor: pointer;
+}
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: 3;
+}
+.sidebar-closebtn i {
+    font-size: 22.5px;
+    position: absolute;
+    top: 0.5em;
+    right: 1.5em;
+    color: var(--black);
+}
+.sidebar-closebtn i:hover {
+    cursor: pointer;
+    color: var(--gray);
+}
+.links-mobile {
+    margin: 3.5em 0 0;
+    padding: 0 1em;
+}
+.social-mobile {
+    margin: 2em 0 1em;
+    padding: 0 1em;
+}
+.main-nav {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    height: 50px;
+    margin: 1.25em 0 0;
+}
+.main-nav h3 {
+    padding-top: 0.35rem;
+}
+.main-nav a {
+    text-decoration: none;
+    color: var(--gray2);
+}
+.main-nav i {
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    padding: 0.8rem 1em 0;
+}
+/* main search  */
+.search:hover {
+    cursor: pointer;
+}
+#Search {
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+    outline: none;
+    display: none;
+}
+#Search:focus {
+    box-shadow: 0 0 10px var(--gray);
+}
+/* main shop section */
+.shop-title {
+    width: 100%;
+    height: 550px;
+    color: var(--white);
+    background: url('./Pictures/jeans.jpg') center center/cover;
+    font-family: Roboto;
+}
+.shop-title h4 {
+    letter-spacing: 5px;
+    padding: 1em 0;
+}
+.shop-btn {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    letter-spacing: 2.5px;
+    font-size: 12.5pt;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.shop-btn:hover {
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--white2);
+}
+/* main jeans section */
+.jean-section h5 {
+    color: var(--gray);
+    padding: 1em 0;
+}
+.jean-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family: Roboto;
+}
+.jean-list li {
+    width: 22.5%;
+    height: auto;
+}
+/* jeans section figures */
+.figures {
+    position: relative;
+}
+.figures img {
+    width: 100%;
+    height: auto;
+}
+.caption span {
+    padding: 0;
+    color: var(--black);
+    font-weight: bold;
+}
+.jean-badge {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    left: 0;
+}
+.jean-buybtn {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    margin: 50% 22.5%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+.jean-buybtn:hover {
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--white2);
+}
+.new-item:hover .jean-buybtn {
+    display: block;
+}
+/* subscribe */
+.subscribe {
+    width: 100%;
+    height: auto;
+    padding: 2.5em 0;
+    color: var(--white);
+    background-color: var(--black);
+    font-family: Montserrat;
+}
+.subscribe h3 {
+    font-size: 30pt;
+}
+#email {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5em;
+    outline: none;
+    border: none;
+    background: var(--white) url('./Pictures/email-30.png') 5px 10px no-repeat;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-family: Roboto;
+}
+#email:focus {
+    box-shadow: 0 0 7.5px var(--gray);
+}
+.submit {
+    color: var(--white);
+    background-color: #f44336;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-top: 1em;
+}
+.submit:hover {
+    color: var(--black);
+    background-color: var(--white2);
+}
+/* information */
+.information {
+    width: 100%;
+    height: auto;
+    color: var(--black);
+    background-color: #f1f1f1;
+}
+.info-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.info-list li {
+    text-align: center;
+}
+/* contact / about */
+.contact {
+    width: 34%;
+    height: auto;
+    padding: 1.5em 0 0;
+}
+.about, .store {
+    width: 33%;
+    height: auto;
+    padding: 1.5em 0 0;
+}
+.contact-form input {
+    width: 90%;
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    border: 1px solid var(--white2);
+    border-radius: 5px;
+    margin: 0.25rem 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-submit {
+    width: 90%;
+    padding: 0.5rem 0;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin: 0.25rem 0;
+}
+.contact-submit:hover {
+    color: var(--black);
+    background-color: var(--white2);
+}
+.about-list, .address-list, .massengers-list {
+    list-style-type: none;
+}
+.about-list a {
+    color: var(--gray2);
+    text-decoration: underline;
+    margin: 0.25rem 0;
+    display: inline-block;
+}
+.about-list a:hover {
+    color: var(--black);
+    font-weight: bold;
+}
+.address-list li {
+    margin: 1rem 0;
+}
+.address-list i {
+    width: 25px;
+}
+/* massengers list */
+.massengers-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.massengers-list a {
+    color: var(--black);
+}
+.massengers-list i {
+    font-size: 20px;
+}
+.massengers-list a:hover {
+    color: var(--gray);
+}
+/* footer */
+.footer {
+    width: 100%;
+    padding: 1em;
+    color: var(--white);
+    background-color: var(--black);
+    text-align: center;
+}

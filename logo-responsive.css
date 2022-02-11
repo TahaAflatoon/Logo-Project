@@ -1,0 +1,334 @@
+/* (Responsive) */
+/* Mobile (small) */
+@media screen and (min-width:320px) and (max-width:374px) {
+    .logo-nav {
+        width: 100%;
+        height: 40px;
+        overflow-y: hidden;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 0 0.75em;
+    }
+    .logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo-list h1 {
+        padding: 0.6rem 0 0;
+        font-size: 12.5pt;
+    }
+    .logo-main {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    .links-section, .social-section {
+        display: none;
+    }
+    .bars {
+        padding: 0.5rem 0 0;
+    }
+    .bars i {
+        font-size: 20px;
+    }
+    .main-nav i {
+        padding: 0.8rem 0 0 1.5rem;
+    }
+    .shop-title {
+        height: 300px;
+    }
+    .shop-title h4 {
+        font-size: 15pt;
+        padding: 5em 0 2em;
+    }
+    .shop-btn {
+        font-size: 7.5pt;
+    }
+    .jean-list li {
+        width: 47.5%;
+        height: auto;
+    }
+    .jean-buybtn {
+        margin: 50% 10%;
+        font-size: 10pt;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 100%;
+    }
+}
+
+/* Mobile (medium) */
+@media screen and (min-width:375px) and (max-width:424px) {
+    .logo-nav {
+        width: 100%;
+        height: 40px;
+        overflow-y: hidden;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 0 1em;
+    }
+    .logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo-list h1 {
+        padding: 0.6rem 0 0;
+        font-size: 12.5pt;
+    }
+    .logo-main {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    .links-section, .social-section {
+        display: none;
+    }
+    .bars {
+        padding: 0.5rem 0 0;
+    }
+    .bars i {
+        font-size: 20px;
+    }
+    .main-nav i {
+        padding: 0.8rem 0 0 1.5rem;
+    }
+    .shop-title {
+        height: 300px;
+    }
+    .shop-title h4 {
+        font-size: 15pt;
+        padding: 5em 0 2em;
+    }
+    .shop-btn {
+        font-size: 8.5pt;
+    }
+    .jean-list li {
+        width: 47.5%;
+        height: auto;
+    }
+    .jean-buybtn {
+        margin: 50% 12.5%;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 50%;
+    }
+}
+
+/* Mobile (large) */
+@media screen and (min-width:425px) and (max-width:575px) {
+    .logo-nav {
+        width: 100%;
+        height: 40px;
+        overflow-y: hidden;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 0 1em;
+    }
+    .logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo-list h1 {
+        padding: 0.6rem 0 0;
+        font-size: 12.5pt;
+    }
+    .logo-main {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    .links-section, .social-section {
+        display: none;
+    }
+    .bars {
+        padding: 0.5rem 0 0;
+    }
+    .bars i {
+        font-size: 20px;
+    }
+    .main-nav i {
+        padding: 0.8rem 0 0 1.5rem;
+    }
+    .shop-title {
+        height: 300px;
+    }
+    .shop-title h4 {
+        font-size: 15pt;
+        padding: 5em 0 2em;
+    }
+    .shop-btn {
+        font-size: 8.5pt;
+    }
+    .jean-list li {
+        width: 47.5%;
+        height: auto;
+    }
+    .jean-buybtn {
+        margin: 50% 17.5%;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 50%;
+    }
+}
+
+/* Size (small) */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .logo-nav {
+        width: 100%;
+        height: 50px;
+        overflow-y: hidden;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 0 1em;
+    }
+    .logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo-list h1 {
+        padding: 0.85rem 0 0;
+        font-size: 15pt;
+    }
+    .logo-main {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+    .links-section, .social-section {
+        display: none;
+    }
+    .bars {
+        padding: 0.85rem 0 0;
+    }
+    .bars i {
+        font-size: 20px;
+    }
+    .main-nav i {
+        padding: 0.8rem 0 0 1.5rem;
+    }
+    .shop-title {
+        height: 450px;
+    }
+    .shop-title h4 {
+        font-size: 22.5pt;
+        padding: 5em 0 1.5em;
+    }
+    .jean-list li {
+        width: 47.5%;
+        height: auto;
+    }
+    .jean-buybtn {
+        margin: 50% 25%;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 50%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .logo-nav {
+        width: 100%;
+        height: 50px;
+        overflow-y: hidden;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 0 1em;
+    }
+    .logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo-list h1 {
+        padding: 0.6rem 0 0;
+    }
+    .logo-main {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+    .links-section, .social-section {
+        display: none;
+    }
+    .bars {
+        padding: 0.65rem 0 0;
+        font-size: 15px;
+    }
+    .main-nav i {
+        padding: 0.8rem 0 0 1.5rem;
+    }
+    .shop-title {
+        height: 450px;
+    }
+    .shop-title h4 {
+        font-size: 22.5pt;
+        padding: 5em 0 1.5em;
+    }
+    .jean-buybtn {
+        margin: 50% 12.5%;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 50%;
+    }
+}
+
+/* Laptop (medium) */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .logo-list h1 {
+        font-size: 20px;
+    }
+    .bars {
+        display: none;
+    }
+    .main-nav {
+        margin: 0.5em 0 0;
+    }
+    .shop-title h4 {
+        font-size: 30pt;
+        padding: 2.5em 0 1em;
+    }
+    .jean-buybtn {
+        margin: 50% 12.5%;
+    }
+    .contact {
+        width: 100%;
+        padding: 1.5em 0 1em;
+    }
+    .about, .store {
+        width: 50%;
+    }
+}
+
+/* Laptop (large) */
+@media screen and (min-width:1200px) and (max-width:1439px) {
+    .bars {
+        display: none;
+    }
+}
+
+/* Size (extra-large) */
+@media screen and (min-width:1440px) and (max-width:2559px) {
+    .bars {
+        display: none;
+    }
+}
